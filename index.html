@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Orthopride Ubatuba | Black Friday</title>
+
+<style>
+:root {
+    --orange: #ff6a00;
+    --orange2: #ff8a00;
+    --black: #090909;
+    --white: #fff;
+    --gray: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    background: var(--white);
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+
+    background: rgba(9, 9, 9, .92);
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid #292929;
+}
+
+.nav-inner {
+    max-width: 1180px;
+    margin: auto;
+    padding: 16px 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 900;
+    color: #fff;
+    font-size: 20px;
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+.logo small {
+    font-size: 10px;
+    color: #aaa;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    color: #ddd;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-links a:hover {
+    color: var(--orange);
+}
+
+.cta-mini {
+    background: var(--orange);
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 999px;
+    font-weight: 900;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 100vh;
+
+    padding: 145px 22px 80px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #ff7b0033,
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #050505 0%,
+            #111 55%,
+            #ff6a00 160%
+        );
+
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+.hero-grid {
+    max-width: 1180px;
+    width: 100%;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+
+    gap: 55px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+
+    padding: 9px 14px;
+
+    border: 1px solid #ff8a00aa;
+
+    background: #ff6a0018;
+
+    color: #ff9b42;
+
+    border-radius: 999px;
+
+    font-weight: 900;
+    font-size: 13px;
+
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: clamp(46px, 7vw, 82px);
+
+    line-height: .93;
+
+    letter-spacing: -4px;
+}
+
+h1 span {
+    color: var(--orange);
+}
+
+.hero p {
+    font-size: 19px;
+
+    color: #d7d7d7;
+
+    line-height: 1.65;
+
+    margin: 25px 0;
+
+    max-width: 650px;
+}
+
+.price {
+    font-size: 54px;
+    font-weight: 950;
+}
+
+.price small {
+    font-size: 18px;
+    color: #aaa;
+}
+
+.buttons {
+    display: flex;
+    gap: 13px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 15px 22px;
+
+    border-radius: 12px;
+
+    font-weight: 900;
+
+    transition: .2s;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.primary {
+    background: var(--orange);
+    color: #fff;
+}
+
+.secondary {
+    border: 1px solid #555;
+    color: #fff;
+}
+
+/* =========================
+   CARD DO HERO
+========================= */
+
+.hero-card {
+    background: linear-gradient(145deg, #fff, #f1f1f1);
+
+    color: #111;
+
+    border-radius: 28px;
+
+    padding: 34px;
+
+    box-shadow: 0 30px 80px #0008;
+
+    transform: rotate(1deg);
+}
+
+.tooth {
+    height: 190px;
+
+    border-radius: 50% 50% 42% 42%;
+
+    background:
+        radial-gradient(
+            circle at 35% 25%,
+            #fff,
+            #ddd
+        );
+
+    position: relative;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 92px;
+
+    filter: drop-shadow(
+        0 20px 25px #0003
+    );
+}
+
+.hero-card h3 {
+    font-size: 25px;
+    margin-top: 24px;
+}
+
+.hero-card p {
+    font-size: 15px;
+    color: #666;
+    margin: 8px 0 0;
+}
+
+/* =========================
+   SEÇÕES
+========================= */
+
+section {
+    padding: 95px 22px;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+
+    max-width: 760px;
+
+    margin: 0 auto 50px;
+}
+
+.section-title .eyebrow {
+    color: var(--orange);
+
+    font-weight: 950;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 12px;
+}
+
+.section-title h2 {
+    font-size: clamp(32px, 5vw, 52px);
+
+    letter-spacing: -2px;
+
+    margin: 10px 0;
+}
+
+.section-title p {
+    color: #666;
+
+    line-height: 1.65;
+}
+
+/* =========================
+   OFERTA
+========================= */
+
+.offer {
+    background: #f7f7f7;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.card {
+    background: #fff;
+
+    border: 1px solid #e8e8e8;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    min-height: 170px;
+
+    transition: .25s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 35px #00000012;
+
+    border-color: #ff6a0050;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.card h3 {
+    margin: 15px 0 7px;
+
+    font-size: 17px;
+}
+
+.card p {
+    font-size: 13px;
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   COMO FUNCIONA
+========================= */
+
+.black {
+    background: #090909;
+
+    color: #fff;
+}
+
+.black .section-title p {
+    color: #aaa;
+}
+
+.steps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.step {
+    border: 1px solid #292929;
+
+    border-radius: 20px;
+
+    padding: 28px;
+
+    background: #111;
+}
+
+.num {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: var(--orange);
+
+    display: grid;
+
+    place-items: center;
+
+    font-weight: 950;
+}
+
+.step h3 {
+    margin: 20px 0 8px;
+}
+
+.step p {
+    color: #aaa;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   AVALIAÇÕES
+========================= */
+
+.reviews {
+    display: grid;
+
+    grid-template-columns: 1fr 2fr;
+
+    gap: 45px;
+
+    align-items: start;
+}
+
+.rating {
+    background: #111;
+
+    color: #fff;
+
+    border-radius: 25px;
+
+    padding: 32px;
+}
+
+.rating .big {
+    font-size: 65px;
+
+    font-weight: 950;
+}
+
+.stars {
+    color: #ff9a00;
+
+    font-size: 25px;
+
+    letter-spacing: 2px;
+}
+
+.review-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 15px;
+}
+
+.review {
+    border: 1px solid #e7e7e7;
+
+    border-radius: 18px;
+
+    padding: 23px;
+
+    background: #fff;
+}
+
+.review p {
+    color: #555;
+
+    line-height: 1.55;
+
+    font-size: 14px;
+}
+
+.review strong {
+    display: block;
+
+    margin-top: 15px;
+}
+
+/* =========================
+   LOCALIZAÇÃO
+========================= */
+
+.location {
+    background:
+        linear-gradient(
+            135deg,
+            #ff6a00,
+            #ff9200
+        );
+
+    color: #fff;
+}
+
+.location-grid {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 25px;
+}
+
+.info {
+    background: #fff;
+
+    color: #111;
+
+    border-radius: 22px;
+
+    padding: 30px;
+}
+
+.info div {
+    padding: 13px 0;
+
+    border-bottom:
+        1px solid #eee;
+}
+
+.info div:last-child {
+    border: 0;
+}
+
+.map {
+    min-height: 100%;
+
+    border-radius: 22px;
+
+    background: #111;
+
+    display: grid;
+
+    place-items: center;
+
+    text-align: center;
+
+    padding: 35px;
+}
+
+.map span {
+    font-size: 55px;
+}
+
+.map p {
+    color: #bbb;
+
+    line-height: 1.6;
+
+    margin: 12px 0 20px;
+}
+
+/* =========================
+   CTA FINAL
+========================= */
+
+.final {
+    padding: 100px 22px;
+
+    text-align: center;
+
+    background: #080808;
+
+    color: #fff;
+}
+
+.final h2 {
+    font-size: clamp(38px, 6vw, 70px);
+
+    letter-spacing: -3px;
+}
+
+.final p {
+    color: #aaa;
+
+    max-width: 650px;
+
+    margin: 18px auto 28px;
+
+    line-height: 1.6;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #050505;
+
+    color: #777;
+
+    text-align: center;
+
+    padding: 25px;
+
+    font-size: 12px;
+}
+
+/* =========================
+   BOTÃO WHATSAPP
+========================= */
+
+.float {
+    position: fixed;
+
+    right: 20px;
+
+    bottom: 20px;
+
+    z-index: 30;
+
+    background: #25d366;
+
+    color: #fff;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: grid;
+
+    place-items: center;
+
+    font-size: 27px;
+
+    box-shadow:
+        0 10px 30px #0005;
+}
+
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+.reveal {
+    opacity: 0;
+
+    transform:
+        translateY(25px);
+
+    transition: .7s;
+}
+
+.reveal.show {
+    opacity: 1;
+
+    transform: none;
+}
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media(max-width:900px) {
+
+    .hero-grid,
+    .reviews,
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .review-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero-card {
+        max-width: 520px;
+
+        margin: auto;
+    }
+}
+
+@media(max-width:520px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 70px 18px;
+    }
+
+    .hero {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .price {
+        font-size: 43px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- =========================
+     NAVBAR
+========================= -->
+
+<nav class="nav">
+
+    <div class="nav-inner">
+
+        <div class="logo">
+            ORTHO<span>PRIDE</span>
+            <small>UBATUBA</small>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#oferta">
+                Oferta
+            </a>
+
+            <a href="#como">
+                Como funciona
+            </a>
+
+            <a href="#avaliacoes">
+                Avaliações
+            </a>
+
+            <a href="#local">
+                Localização
+            </a>
+
+        </div>
+
+        <a
+            class="cta-mini"
+            href="https://wa.me/5512988578979?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Orthopride%20Ubatuba%20e%20quero%20saber%20da%20Black%20Friday."
+            target="_blank"
+        >
+            WhatsApp
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<header class="hero">
+
+<div class="hero-grid">
+
+<div class="reveal">
+
+    <div class="badge">
+        🖤 BLACK FRIDAY ORTHOPRIDE
+    </div>
+
+    <h1>
+        Seu sorriso.<br>
+
+        <span>
+            Seu próximo passo.
+        </span>
+    </h1>
+
+    <p>
+        Uma condição especial para quem quer começar
+        a cuidar do sorriso. Confira o que está incluso
+        na campanha e fale diretamente com a
+        Orthopride Ubatuba.
+    </p>
+
+    <div class="price">
+        R$ 99,90
+
+        <small>
+            condição da campanha
+        </small>
+    </div>
+
+    <div class="buttons">
+
+        <a
+            class="btn primary"
+            href="https://wa.me/5512988578979?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20aproveitar%20a%20condi%C3%A7%C3%A3o%20da%20Black%20Friday."
+            target="_blank"
+        >
+            🔥 Quero aproveitar
+        </a>
+
+        <a
+            class="btn secondary"
+            href="#oferta"
+        >
+            Ver o que inclui ↓
+        </a>
+
+    </div>
+
+</div>
+
+
+<div class="hero-card reveal">
+
+    <div class="tooth">
+        🦷
+    </div>
+
+    <h3>
+        Black Friday Orthopride
+    </h3>
+
+    <p>
+        Condições promocionais por tempo limitado.
+        Consulte disponibilidade e condições aplicáveis
+        ao seu caso.
+    </p>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- =========================
+     OFERTA
+========================= -->
+
+<section id="oferta" class="offer">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+    <div class="eyebrow">
+        O que está incluso
+    </div>
+
+    <h2>
+        Uma condição especial para começar
+    </h2>
+
+    <p>
+        De acordo com a tabela da campanha,
+        a condição contempla os itens abaixo.
+    </p>
+
+</div>
+
+
+<div class="cards">
+
+
+<div class="card reveal">
+
+    <div class="icon">
+        🩻
+    </div>
+
+    <h3>
+        Raio-X completo
+    </h3>
+
+    <p>
+        Exames de imagem incluídos conforme
+        a condição da campanha.
+    </p>
+
+</div>
+
+
+<div class="card reveal">
+
+    <div class="icon">
+        🦷
+    </div>
+
+    <h3>
+        Profilaxia
+    </h3>
+
+    <p>
+        Limpeza avançada para auxiliar nos
+        cuidados com a saúde bucal.
+    </p>
+
+</div>
+
+
+<div class="card reveal">
+
+    <div class="icon">
+        😁
+    </div>
+
+    <h3>
+        Aparelho fixo
+    </h3>
+
+    <p>
+        Instalação de aparelho fixo conforme
+        avaliação profissional.
+    </p>
+
+</div>
+
+
+<div class="card reveal">
+
+    <div class="icon">
+        ✨
+    </div>
+
+    <h3>
+        Aparelho móvel
+    </h3>
+
+    <p>
+        Item contemplado na condição
+        promocional informada.
+    </p>
+
+</div>
+
+
+<div class="card reveal">
+
+    <div class="icon">
+        🔒
+    </div>
+
+    <h3>
+        Contenção
+    </h3>
+
+    <p>
+        Contenção incluída conforme
+        as condições da campanha.
+    </p>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- =========================
+     COMO FUNCIONA
+========================= -->
+
+<section id="como" class="black">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+    <div class="eyebrow">
+        É simples
+    </div>
+
+    <h2>
+        Seu próximo passo começa aqui
+    </h2>
+
+    <p>
+        Entre em contato e confirme a disponibilidade
+        da condição promocional para o seu caso.
+    </p>
+
+</div>
+
+
+<div class="steps">
+
+
+<div class="step reveal">
+
+    <div class="num">
+        1
+    </div>
+
+    <h3>
+        Chame no WhatsApp
+    </h3>
+
+    <p>
+        Fale com a equipe da Orthopride Ubatuba
+        pelo número oficial da campanha.
+    </p>
+
+</div>
+
+
+<div class="step reveal">
+
+    <div class="num">
+        2
+    </div>
+
+    <h3>
+        Confira as condições
+    </h3>
+
+    <p>
+        Verifique disponibilidade, indicação e
+        condições aplicáveis ao seu caso.
+    </p>
+
+</div>
+
+
+<div class="step reveal">
+
+    <div class="num">
+        3
+    </div>
+
+    <h3>
+        Dê o próximo passo
+    </h3>
+
+    <p>
+        Se a condição for adequada para você,
+        combine seu atendimento diretamente
+        com a clínica.
+    </p>
+
+</div>
+
+
+</div>
+</div>
+</section>
+
+
+<!-- =========================
+     AVALIAÇÕES
+========================= -->
+
+<section id="avaliacoes">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+    <div class="eyebrow">
+        Reputação
+    </div>
+
+    <h2>
+        O que aparece nas avaliações
+    </h2>
+
+    <p>
+        A clínica apresenta nota 4,0/5 com
+        20 avaliações informadas. Os comentários
+        são variados, então reunimos os principais
+        pontos sem prometer resultados.
+    </p>
+
+</div>
+
+
+<div class="reviews">
+
+
+<div class="rating reveal">
+
+    <div class="big">
+        4,0
+    </div>
+
+    <div class="stars">
+        ★★★★☆
+    </div>
+
+    <p style="margin-top:12px;color:#bbb">
+        20 avaliações informadas
+    </p>
+
+    <p
+        style="
+        margin-top:20px;
+        color:#aaa;
+        line-height:1.6;
+        "
+    >
+        Entre os relatos, aparecem elogios ao
+        atendimento, atenção dos profissionais,
+        comprometimento e experiência geral.
+        Também existem relatos negativos relacionados
+        a atendimento e tratamentos prolongados.
+    </p>
+
+</div>
+
+
+<div class="review-grid">
+
+
+<div class="review reveal">
+
+    <div class="stars">
+        ★★★★★
+    </div>
+
+    <p>
+        Há relatos positivos destacando atendimento
+        da equipe, profissionais atenciosos e
+        comprometimento.
+    </p>
+
+    <strong>
+        Experiências positivas
+    </strong>
+
+</div>
+
+
+<div class="review reveal">
+
+    <div class="stars">
+        ★★★★★
+    </div>
+
+    <p>
+        Alguns pacientes mencionam rapidez no
+        tratamento e recomendam a experiência
+        na clínica.
+    </p>
+
+    <strong>
+        Recomendações
+    </strong>
+
+</div>
+
+
+<div class="review reveal">
+
+    <div class="stars">
+        ★★★★★
+    </div>
+
+    <p>
+        A Dra. Júlia aparece entre os elogios
+        específicos relacionados ao atendimento
+        prestado.
+    </p>
+
+    <strong>
+        Destaque profissional
+    </strong>
+
+</div>
+
+
+<div class="review reveal">
+
+    <div class="stars">
+        ★★★☆☆
+    </div>
+
+    <p>
+        Também há avaliações negativas.
+        Por isso, consulte a clínica e tire
+        suas dúvidas antes de iniciar qualquer
+        tratamento.
+    </p>
+
+    <strong>
+        Pontos de atenção
+    </strong>
+
+</div>
+
+
+</div>
+</div>
+</div>
+
+</section>
+
+
+<!-- =========================
+     LOCALIZAÇÃO
+========================= -->
+
+<section id="local" class="location">
+
+<div class="container">
+
+<div class="section-title reveal">
+
+    <div
+        class="eyebrow"
+        style="color:#111"
+    >
+        Onde estamos
+    </div>
+
+    <h2>
+        Orthopride Ubatuba
+    </h2>
+
+    <p style="color:#222">
+
+        No Centro de Ubatuba,
+        com atendimento e contato
+        direto pelo WhatsApp.
+
+    </p>
+
+</div>
+
+
+<div class="location-grid">
+
+
+<div class="info reveal">
+
+
+<div>
+
+    <b>
+        📍 Endereço
+    </b>
+
+    <br>
+
+    Praça Nóbrega – Centro,
+    Ubatuba/SP
+
+    <br>
+
+    CEP 11690-153
+
+</div>
+
+
+<div>
+
+    <b>
+        📞 WhatsApp
+    </b>
+
+    <br>
+
+    (12) 98857-8979
+
+</div>
+
+
+<div>
+
+    <b>
+        🕐 Horário informado
+    </b>
+
+    <br>
+
+    Aberta até 18h
+
+</div>
+
+
+<div>
+
+    <b>
+        📌 Maps
+    </b>
+
+    <br>
+
+    HW8G+MW,
+    Centro, Ubatuba – SP
+
+</div>
+
+
+</div>
+
+
+<div class="map reveal">
+
+<div>
+
+    <span>
+        📍
+    </span>
+
+    <h3>
+        Centro de Ubatuba
+    </h3>
+
+    <p>
+        Use o código de localização HW8G+MW
+        no Google Maps ou fale com a clínica
+        para confirmar a melhor rota.
+    </p>
+
+    <a
+        class="btn primary"
+        target="_blank"
+        href="https://www.google.com/maps/search/?api=1&query=HW8G%2BMW%2C%20Centro%2C%20Ubatuba%20-%20SP"
+    >
+        Abrir no Maps
+    </a>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+
+<section class="final">
+
+<div class="container reveal">
+
+    <div class="badge">
+        🔥 VAGAS / CONDIÇÕES LIMITADAS
+    </div>
+
+    <h2>
+        Quer aproveitar a Black Friday?
+    </h2>
+
+    <p>
+        Entre em contato com a Orthopride Ubatuba
+        para confirmar a disponibilidade da condição
+        de R$ 99,90 e saber se ela se aplica ao seu caso.
+    </p>
+
+    <a
+        class="btn primary"
+        href="https://wa.me/5512988578979?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Orthopride%20Ubatuba%20e%20quero%20saber%20como%20aproveitar%20a%20Black%20Friday%20de%20R%24%2099%2C90."
+        target="_blank"
+    >
+        📲 Falar com a Orthopride
+    </a>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+© 2026 Orthopride Ubatuba ·
+Informações promocionais sujeitas a disponibilidade
+e condições aplicáveis.
+
+</footer>
+
+
+<!-- =========================
+     WHATSAPP FLUTUANTE
+========================= -->
+
+<a
+    class="float"
+    href="https://wa.me/5512988578979?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Orthopride%20Ubatuba."
+    target="_blank"
+    aria-label="WhatsApp"
+>
+    ◉
+</a>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+const obs = new IntersectionObserver(
+
+    entries => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+            }
+
+        });
+
+    },
+
+    {
+        threshold: 0.12
+    }
+
+);
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach(el => {
+
+        obs.observe(el);
+
+    });
+
+</script>
+
+</body>
+</html>
